@@ -1,17 +1,102 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
+<ion-content color="danger" [fullscreen]="true">
   <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+    <ion-toolbar color="danger" >
+      <ion-title size="large">RentCam</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  
+  
+  <ion-content class="padding has-header" ng-controller="lisCtrl">
+    <ion-searchbar></ion-searchbar>
+
+    <ion-slides expand="block"  [options]='slidebaru'>
+      <ion-slide  *ngFor ="let item of mhs">
+      <ion-card (click)="pindah(item)">
+      <ion-card-title color="light">{{item.name}}</ion-card-title>
+      <p>{{item.name}}</p>
+      </ion-card>
+      </ion-slide>
+      </ion-slides>
+      
+    <div class="card list">
+
+      <ion-item class="item-avatar">
+        
+        <h2>Canon</h2>
+       
+      </ion-item>
+      
+      <ion-item  class="item-image">
+        <img src="assets/icon/canon.png" width="auto" height="auto">
+         
+      </ion-item>
+      <ion-card-title > <h2> Canon 1300D </h2> </ion-card-title>
+      <ion-button color="danger" size="medium" expand="block" (click)="rent(item)">
+        <div>Rent</div>
+    
+      </ion-button>
+      
+
+      <ion-item class="item-avatar">
+        
+        <h2>Sony</h2>
+       
+      </ion-item>
+
+      <ion-item  class="item-image">
+        <img src="assets/icon/sony.png" width="auto" height="auto">
+      </ion-item>
+      <ion-card-title> <h2> Sony Alpha 7 </h2> </ion-card-title>
+      <ion-button color="danger" size="medium" expand="block" (click)="rent(item)">
+        <div>Rent</div>
+        </ion-button>
+
+      <ion-item class="item-avatar">
+        
+        <h2>Nikon</h2>
+       
+      </ion-item>
+
+      <ion-item  class="item-image">
+        <img src="assets/icon/nikon.png" width="auto" height="auto">
+      </ion-item>
+      <ion-card-title> <h2> Nikon D850 </h2> </ion-card-title>
+      <ion-button color="danger" size="medium" expand="block" (click)="rent(item)">
+      <div>Rent</div>
+      </ion-button>
+    
+      <ion-item class="item-avatar">
+        
+        <h2>Sony</h2>
+       
+      </ion-item>
+
+      <ion-item  class="item-image">
+        <img src="assets/icon/sonya6300.png" width="auto" height="auto">
+         
+      </ion-item>
+      <ion-card-title > <h2> Sony Alpha 6300 </h2> </ion-card-title>
+      <ion-button color="danger" size="medium" expand="block" (click)="rent(item)">
+        <div>Rent</div>
+    
+      </ion-button>
+      
+
+      <ion-item class="item-avatar">
+        
+        <h2>Sony</h2>
+       
+      </ion-item>
+
+    </div>
+</ion-content>
+  <ion-slides [options]='slidebaru'>
+    <ion-slide *ngFor ="let item of mhs">
+    <ion-card >
+    <p>{{item.name}}</p>
+    </ion-card>
+    </ion-slide>
+    </ion-slides>
+  
 </ion-content>

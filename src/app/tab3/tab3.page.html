@@ -1,17 +1,69 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+<ion-content color="danger" [fullscreen]="true">
+  <ion-header  collapse="condense">
+    
+    <ion-toolbar color="danger">
+      <ion-icon [routerLink]="['/tabs']" name="caret-back"></ion-icon>
+    <ion-label [routerLink]="['/tabs']">Back</ion-label>
+      <ion-title> <h2> Details </h2></ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-searchbar color="light" ></ion-searchbar>
+  <ion-card>
+    <img src="assets/icon/canon.png" width="auto" height="auto">
+    <ion-card-header>
+      <ion-card-subtitle>Canon EOS 1300D</ion-card-subtitle>
+      <ion-card-title>Rp.900.000/Day</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      18 megapixel APS-C CMOS sensor & DIGIC 4+
+      9-point AF with 1 centre cross-type AF point.
+      3 inch TFT LCD Screen Fixed Type.
+      ISO 100 – 12800 (Auto)
+      Full HD Recording.
+      Wi-Fi with NFC.
+      Hi-speed USB Support.
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card>
+    <img src="assets/icon/sony.png" width="auto" height="auto">
+    <ion-card-header>
+      <ion-card-subtitle>Sony Alpha 7</ion-card-subtitle>
+      <ion-card-title>Rp.600.000/Day</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      24.3MP Full Frame Exmor CMOS Sensor.
+      BIONZ X Image Processor.
+      Direct Compatibility with E-mount Lenses.
+      Hybrid AF system with 25 contrast-detect and 117 phase-detect points.
+      Sealed alloy and composite body.
+      3.0″ Tiltable TFT LCD with 921.6K-Dots.
+      XG A (1024×768) electronic viewfinder.
+    </ion-card-content>
+  </ion-card>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-card>
+    <img src="assets/icon/nikon.png" width="auto" height="auto">
+    <ion-card-header>
+      <ion-card-subtitle>Nikon D850</ion-card-subtitle>
+      <ion-card-title>Rp.700.000/Day</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      45.7MP FX-Format BSI CMOS Sensor.
+      EXPEED 5 Image Processor.
+      3.2″ 2.36m-Dot Tilting Touchscreen LCD.
+      4K UHD Video Recording at 30 fps.
+      Native ISO: 64-25600,Extended: 32-102400.
+      8K Time-Lapse, Negative Digitizer Mode.
+      SnapBridge Bluetooth dan Wi-Fi.
+      Lensa AF-S Nikkor 24-120mm f/4G ED VR.
+    </ion-card-content>
+  </ion-card>
+
+  
+  
 </ion-content>

@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+  <ion-buttons slot="start">
+  <ion-back-button defaultHref="/tabs/tab2"> </ion-back-button>
+  </ion-buttons>
+  <ion-title>Description</ion-title>
+  <ion-buttons slot="end">
+  <ion-button (click)="goEdit()">
+  <ion-icon name="create"> </ion-icon>
+  </ion-button>
+  </ion-buttons></ion-toolbar>
+</ion-header>
+<ion-content>
+ <ion-card>
+ <ion-card-header>
+ <ion-card-title> {{book.title | uppercase}}</ion-card-title>
+ </ion-card-header>
+ <ion-card-content>
+  <p>Name: {{book.name}}</p>
+  <p>Lama Penyewaan: {{book.lamapenyewaan}}</p>
+  <p>Alamat: {{book.alamat}}</p>
+  <p>Tipe: {{book.tipe}}</p>
+  <p>nphp: {{book.nohp}}</p>
+ </ion-card-content>
+ </ion-card>
+</ion-content>

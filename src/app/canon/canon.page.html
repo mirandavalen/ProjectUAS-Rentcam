@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-icon [routerLink]="['/tabs']" name="caret-back"></ion-icon>
+    <ion-label [routerLink]="['/tabs']">Back</ion-label>
+    <ion-title>Payment</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label position="stacked">Name</ion-label>
+    <ion-textarea [(ngModel)]="book.name" placeholder="Enter Name"></ion-textarea>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Lama Penyewaan</ion-label>
+    <ion-input [(ngModel)]="book.lamapenyewaan" placeholder="Enter Lama Penyewaan"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Alamat</ion-label>
+    <ion-input [(ngModel)]="book.alamat" placeholder="Enter Alamat"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Tipe</ion-label>
+    <ion-input [(ngModel)]="book.tipe" placeholder="Enter Tipe"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">No Hp</ion-label>
+    <ion-input [(ngModel)]="book.nohp" placeholder="Enter No Hp"></ion-input>
+  </ion-item>
+  <ion-button color="danger" expand="block" (click)="submit()">SUBMIT</ion-button>
+ </ion-content>

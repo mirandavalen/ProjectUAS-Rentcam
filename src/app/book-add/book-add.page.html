@@ -1,0 +1,32 @@
+<!-- //src/app/book-add/book-add.page.html -->
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-title>Cart</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="closePage()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label position="stacked">Name</ion-label>
+    <ion-input [(ngModel)]="book.title" placeholder="enter name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Number Phone</ion-label>
+    <ion-input [(ngModel)]="book.description" placeholder="enter number phone"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Type Camera</ion-label>
+    <ion-input [(ngModel)]="book.images" placeholder="enter type camera"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Old Rent</ion-label>
+    <ion-input [(ngModel)]="book.name" placeholder="enter old rent"></ion-input>
+  </ion-item>
+  <ion-button expand="block" (click)="submit()">Payment</ion-button>
+</ion-content>
+
